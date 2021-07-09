@@ -8,7 +8,8 @@ html {
   align-items: center;
   justify-content: center;
   font-family: "Fira Sans", Helvetica, Arial, sans-serif;
-  color: antiquewhite;
+  /* color: antiquewhite; */
+  color:black;
 }
 body {
   position: relative;
@@ -176,6 +177,7 @@ body {
   font-size: 1.2em;
   height: 49px;
 }
+
 .btn-show-pass p{
   font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   font-size: 13px;
