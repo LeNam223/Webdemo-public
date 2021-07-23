@@ -1,80 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>calender</title>
-    <link rel="stylesheet" href="../css/Calender.css" />
-  </head>
-  <body>
-    <div class="container">
-        <div class="calendar-container">
-            <header>
-              <div class="header-day">18</div>
-              <div class="header-month">August</div>
-            </header>
-            <table class="calendar-form">
-              <thead>
-                <tr>
-                  <td>Mon</td>
-                  <td>Tue</td>
-                  <td>Wed</td>
-                  <td>Thu</td>
-                  <td>Fri</td>
-                  <td>Sat</td>
-                  <td>Sun</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="past-month">29</td>
-                  <td class="past-month">30</td>
-                  <td class="past-month">31</td>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>7</td>
-                  <td>8</td>
-                  <td>9</td>
-                  <td>10</td>
-                  <td>11</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>13</td>
-                  <td>14</td>
-                  <td>15</td>
-                  <td>16</td>
-                  <td>17</td>
-                  <td class="current-day">18</td>
-                </tr>
-                <tr>
-                  <td>19</td>
-                  <td>20</td>
-                  <td>21</td>
-                  <td>22</td>
-                  <td>23</td>
-                  <td>24</td>
-                  <td>25</td>
-                </tr>
-                <tr>
-                  <td>26</td>
-                  <td>27</td>
-                  <td>28</td>
-                  <td>29</td>
-                  <td>30</td>
-                  <td>31</td>
-                  <td class="next-month">1</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="pin-left"></div>
-            <div class="pin-right"></div>
-          </div>
-    </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Calender</title>
+    <link rel="stylesheet" href="../css/Calender.css">
+</head>
+<body>
     
-  </body>
+    <div class="container-calendar">
+        <h4 id="monthAndYear"></h4>
+        <div class="button-container-calendar">
+            <button id="prev" onclick="prev()"><b>‹</b></button>
+            <button id="next" onclick="next()"><b>›</b></button>
+        </div>
+
+        <table class="table-calendar" id="calendar" data-lang="ja">
+            <thead id="thead-month"></thead>
+            <tbody id="calendar-body"></tbody>
+        </table>
+        <div class="footer-container-calendar">
+            <label for="hour">時付指定</label>
+            <select id="hour" onchange="jump()">
+                <option value="0h">1時</option>
+                <option value="1h">2時</option>
+                <option value="2h">3時</option>
+                <option value="3h">4時</option>
+                <option value="4h">5時</option>
+                <option value="5h">6時</option>
+                <option value="6h">7時</option>
+                <option value="7h">8時</option>
+                <option value="8h">9時</option>
+                <option value="9h">10時</option>
+                <option value="10h">11時</option>
+                <option value="11h">12時</option>s
+            </select>
+            <select id="year" onchange="jump()"></select>
+            
+            <label for="month">日付指定：</label>
+            <select id="month" onchange="jump()">
+                <option value="0">1月</option>
+                <option value="1">2月</option>
+                <option value="2">3月</option>
+                <option value="3">4月</option>
+                <option value="4">5月</option>
+                <option value="5">6月</option>
+                <option value="6">7月</option>
+                <option value="7">8月</option>
+                <option value="8">9月</option>
+                <option value="9">10月</option>
+                <option value="10">11月</option>
+                <option value="11">12月</option>
+            </select>
+            <select id="year" onchange="jump()"></select>
+        </div>
+    </div>
+    <script src="js/calendar.js" type="text/javascript"></script>
+</body>
 </html>

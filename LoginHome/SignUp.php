@@ -8,9 +8,10 @@ session_start();
   <meta charset="utf-8" />
   <title>LogIn</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="../JavaScript/login.js"></script>
   <link rel="stylesheet" href="../css/login.css" />
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
-  <!-- <script src="../JavaScript/login.js"></script> -->
 </head>
 <body>
   <h3>

@@ -47,11 +47,8 @@ body {
   padding-bottom: 50px;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 17px;
+ .swiper-slide {
   background: #fff;
-  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -60,11 +57,16 @@ body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+} 
+
+#main-slider {
+  height: 780px;
+  overflow: hidden;
 }
 
-.example-image-link img {
-  width: 1200px;
-  height:700px;
+#main-slider img {
+  width: 100%;
+  height: 100%;
 }
 
 .social-header {

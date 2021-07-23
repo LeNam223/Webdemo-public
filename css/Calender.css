@@ -1,4 +1,4 @@
-/* @use postcss-preset-env; */
+/* @use postcss-preset-env;
 
 .container {
 	font: 87.5%/1.5em 'Lato', sans-serif;
@@ -109,4 +109,9 @@ td {
 	margin: 8px;
 	height: 32px;
 	width: 10px;
-}
+} */
+
+.wrapper {
+	margin: 15px auto;
+	max-width: 700px;
+  }
