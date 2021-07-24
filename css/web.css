@@ -509,6 +509,110 @@ body {
   opacity: 1;
 }
 
+.Image13 {
+  background: url("../images/2.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Image13:hover {
+  background: url("../images/2.jpg") left center no-repeat;
+  background-size: cover;
+}
+
+.Image13:hover.fa {
+  opacity: 1;
+}
+
+.Image13:hover h2 {
+  opacity: 1;
+}
+
+.Image13:hover h4 {
+  opacity: 1;
+}
+
+.Image13:hover button {
+  opacity: 1;
+}
+
+.Image14 {
+  background: url("../images/2.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Image14:hover {
+  background: url("../images/2.jpg") left center no-repeat;
+  background-size: cover;
+}
+
+.Image14:hover.fa {
+  opacity: 1;
+}
+
+.Image14:hover h2 {
+  opacity: 1;
+}
+
+.Image14:hover h4 {
+  opacity: 1;
+}
+
+.Image14:hover button {
+  opacity: 1;
+}
+
+.Image15 {
+  background: url("../images/2.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Image15:hover {
+  background: url("../images/2.jpg") left center no-repeat;
+  background-size: cover;
+}
+
+.Image15:hover.fa {
+  opacity: 1;
+}
+
+.Image15:hover h2 {
+  opacity: 1;
+}
+
+.Image15:hover h4 {
+  opacity: 1;
+}
+
+.Image15:hover button {
+  opacity: 1;
+}
+
+.Image16 {
+  background: url("../images/2.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.Image16:hover {
+  background: url("../images/2.jpg") left center no-repeat;
+  background-size: cover;
+}
+
+.Image16:hover.fa {
+  opacity: 1;
+}
+
+.Image16:hover h2 {
+  opacity: 1;
+}
+
+.Image16:hover h4 {
+  opacity: 1;
+}
+
+.Image16:hover button {
+  opacity: 1;
+}
+
 .border h2 {
   font-family: "Cardo";
   color: white;
