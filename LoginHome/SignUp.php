@@ -38,7 +38,6 @@ session_start();
         <a href="LogIn.php"><button type="button" class="submit-btn">Log In</button></a>
       </div>
   </div>
-  
 </body>
 
 </html>
