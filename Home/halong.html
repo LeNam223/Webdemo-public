@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uf8">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ha Long</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+
+        .swiper-slide {
+            font-size: 18px;
+            color: #fff;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 150px 1500px;
+        }
+
+        .parallax-bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 130%;
+            height: 100%;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .swiper-slide .title {
+            font-size: 41px;
+            font-weight: 300;
+        }
+
+        .swiper-slide .subtitle {
+            font-size: 21px;
+        }
+
+        .swiper-slide .text {
+            font-size: 14px;
+            max-width: 400px;
+            line-height: 1.3;
+        }
+
+        .traditional-vertical-writing {
+            writing-mode: vertical-rl;
+            font-family: "Cardo";
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper-container mySwiper">
+        <div class="parallax-bg" style="
+        background-image: url('../images/halong.jpg');
+      " data-swiper-parallax="-23%"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">Halong</div>
+                <!-- <div class="subtitle" data-swiper-parallax="-200">Subtitle</div> -->
+                <div class="text" data-swiper-parallax="-100">
+                    <p class="traditional-vertical-writing">
+                        最も美しい場所は私たちが今まで行ったことのない場所であり,<br>
+                        最も美しい時間は私たちが戻ることができない時間です...
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">Halong</div>
+                <!-- <div class="subtitle" data-swiper-parallax="-200">Subtitle</div> -->
+                <div class="text" data-swiper-parallax="-100">
+                    <p class="traditional-vertical-writing">
+                        最も美しい場所は私たちが今まで行ったことのない場所であり,<br>
+                        最も美しい時間は私たちが戻ることができない時間です...
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">Halong</div>
+                <!-- <div class="subtitle" data-swiper-parallax="-200">Subtitle</div> -->
+                <div class="text" data-swiper-parallax="-100">
+                    <p class="traditional-vertical-writing">
+                        最も美しい場所は私たちが今まで行ったことのない場所であり,<br>
+                        最も美しい時間は私たちが戻ることができない時間です...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- ここから Swiper javascript  -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container',
+            {
+                speed: 3000,
+                direction: 'horizontal',
+                navigation:
+                {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination:
+                {
+                    el: '.swiper-pagination',
+                    dynamicBullets: true,
+                },
+                zoom: true,
+                keyboard:
+                {
+                    enabled: true,
+                    onlyInViewport: false,
+                },
+                autoplay:
+                {
+                    delay: 3000,
+                },
+                loop: true,
+            });
+    </script>
+</body>
+
+</html>
